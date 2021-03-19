@@ -24,5 +24,5 @@ RUN dotnet publish "HelloRadix/HelloRadix.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENV ASPNETCORE_URLS http://*:3000
+
 ENTRYPOINT ["dotnet", "HelloRadix.dll"]
