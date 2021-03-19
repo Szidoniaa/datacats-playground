@@ -20,8 +20,8 @@ namespace HelloRadix
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>()
-                        .UseUrls("http://*:3000");
+                    webBuilder.UseStartup<Startup>();
+                    //   .UseUrls("http://*:3000");
                 });
     }
 }
