@@ -9,7 +9,7 @@ spec:
       build:
         from: master
   components:
-    - name: HelloRadix
+    - name: helloradix
       dockerfileName: Dockerfile
       ports:
         - name: http
