@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "At2g7jtPJ+3ULi0pde/br6XWOk8q1gOHY5RmmBJHXMcrgWzd83yPjtTrtknNaFpwRwbcX+xD+0MisXf/4beZOw==",
+  "success": true,
+  "projectFilePath": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\szidonia.antal\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\szidonia.antal\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
+    "C:\\Users\\szidonia.antal\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.1\\swashbuckle.aspnetcore.swagger.6.1.1.nupkg.sha512",
+    "C:\\Users\\szidonia.antal\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.1\\swashbuckle.aspnetcore.swaggergen.6.1.1.nupkg.sha512",
+    "C:\\Users\\szidonia.antal\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.1\\swashbuckle.aspnetcore.swaggerui.6.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
