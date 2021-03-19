@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadixTests\\HelloRadixTests.csproj": {}
+    "C:\\projects\\datacats-playground\\HelloRadixTests\\HelloRadixTests.csproj": {}
   },
   "projects": {
-    "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadixTests\\HelloRadixTests.csproj": {
+    "C:\\projects\\datacats-playground\\HelloRadixTests\\HelloRadixTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadixTests\\HelloRadixTests.csproj",
+        "projectUniqueName": "C:\\projects\\datacats-playground\\HelloRadixTests\\HelloRadixTests.csproj",
         "projectName": "HelloRadixTests",
-        "projectPath": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadixTests\\HelloRadixTests.csproj",
+        "projectPath": "C:\\projects\\datacats-playground\\HelloRadixTests\\HelloRadixTests.csproj",
         "packagesPath": "C:\\Users\\szidonia.antal\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadixTests\\obj\\",
+        "outputPath": "C:\\projects\\datacats-playground\\HelloRadixTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\szidonia.antal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix\\HelloRadix.csproj": {
-                "projectPath": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix\\HelloRadix.csproj"
+              "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix.csproj": {
+                "projectPath": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix\\HelloRadix.csproj": {
+    "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix\\HelloRadix.csproj",
+        "projectUniqueName": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix.csproj",
         "projectName": "HelloRadix",
-        "projectPath": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix\\HelloRadix.csproj",
+        "projectPath": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix.csproj",
         "packagesPath": "C:\\Users\\szidonia.antal\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\datacats-playground\\HelloRadix\\HelloRadix\\obj\\",
+        "outputPath": "C:\\projects\\datacats-playground\\HelloRadix\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\szidonia.antal\\AppData\\Roaming\\NuGet\\NuGet.Config",
