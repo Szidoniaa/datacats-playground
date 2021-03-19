@@ -13,6 +13,6 @@ spec:
       dockerfileName: Dockerfile
       ports:
         - name: http
-          port: 5000
+          port: 49173
       public: true
       replicas: 1
