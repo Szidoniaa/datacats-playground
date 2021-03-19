@@ -16,5 +16,3 @@ spec:
           port: 5000
       public: true
       replicas: 1
-      secrets:
-        - CLIENTSECRET
