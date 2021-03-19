@@ -1,0 +1,20 @@
+apiVersion: radix.equinor.com/v1
+kind: RadixApplication
+metadata:
+  name: HelloRadix
+spec:
+  build:
+  environments:
+    - name: production
+      build:
+        from: master
+  components:
+    - name: backend
+      dockerfileName: Dockerfile
+      ports:
+        - name: http
+          port: 5000
+      public: true
+      replicas: 1
+      secrets:
+        - CLIENTSECRET
