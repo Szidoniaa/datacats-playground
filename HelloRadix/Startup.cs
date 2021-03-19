@@ -33,13 +33,12 @@ namespace HelloRadix
             app.UseHttpsRedirection();
             app.UseSwagger(c =>
             {
-                c.RouteTemplate = "HelloRadix/swagger/{documentName}/swagger.json";
             });
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/HelloRadix/swagger/v1/swagger.json", "HelloRadix");
-                c.RoutePrefix = "HelloRadix/swagger";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "HelloRadix");
+                c.RoutePrefix = "";
             });
             app.UseRouting();
 
