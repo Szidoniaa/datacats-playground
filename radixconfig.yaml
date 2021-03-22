@@ -5,6 +5,9 @@ metadata:
 spec:
   build:
   environments:
+    - name: feature
+      build:
+        from: feature/*
     - name: development
       build:
         from: master
