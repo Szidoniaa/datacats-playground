@@ -25,10 +25,10 @@ namespace HelloRadixTests
             Assert.IsInstanceOf<IEnumerable<WeatherForecast>>(result);
         }
 
-        //[Test]
-        //public void WantThisToFail()
-        //{
-        //    Assert.IsTrue(false);
-        //}
+/*        [Test]
+        public void WantThisToFail()
+        {
+            Assert.IsTrue(false);
+        }*/
     }
 }

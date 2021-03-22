@@ -12,7 +12,7 @@ spec:
       build:
         from: release
   components:
-    - name: HelloRadix
+    - name: helloradix
       dockerfileName: Dockerfile
       ports:
         - name: http
