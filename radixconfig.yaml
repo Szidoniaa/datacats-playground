@@ -5,9 +5,12 @@ metadata:
 spec:
   build:
   environments:
-    - name: production
+    - name: development
       build:
         from: master
+    - name: production
+      build:
+        from: release
   components:
     - name: HelloRadix
       dockerfileName: Dockerfile
