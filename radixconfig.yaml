@@ -17,6 +17,7 @@ spec:
   components:
     - name: helloradix
       dockerfileName: Dockerfile
+      image: swagger/index.html
       ports:
         - name: http
           port: 3000

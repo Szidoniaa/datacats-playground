@@ -12,7 +12,7 @@ COPY ["HelloRadixTests/HelloRadixTests.csproj", "HelloRadixTests/"]
 RUN dotnet restore "HelloRadix/HelloRadix.csproj"
 RUN dotnet restore "HelloRadixTests/HelloRadixTests.csproj"
 COPY . .
-#WORKDIR "/src/HelloRadix"
+
 RUN dotnet build "HelloRadix/HelloRadix.csproj" -c Release -o /app/build
 RUN dotnet build "HelloRadixTests/HelloRadixTests.csproj" -c Release -o /app/build
 
