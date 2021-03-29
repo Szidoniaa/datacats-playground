@@ -116,9 +116,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "Microsoft.Identity.Web": {
               "target": "Package",
-              "version": "[1.10.13, )"
+              "version": "[1.8.2, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
