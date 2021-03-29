@@ -15,11 +15,8 @@ spec:
       build:
         from: release
   components:
-    - name: helloradix
-      variables:
-        RADIX_PUBLIC_DOMAIN_NAME: helloradix-helloradix-feature.playground.radix.equinor.com/swagger/index.html
-      dockerfileName: Dockerfile
-      image: swagger/index.html
+    - name: helloradix      
+      dockerfileName: Dockerfile      
       ports:
         - name: http
           port: 3000

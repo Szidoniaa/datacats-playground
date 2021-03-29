@@ -2,6 +2,7 @@ using HelloRadix.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.StaticFiles.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -48,8 +49,15 @@ namespace HelloRadix
 
             app.ConfigureSwagger(Configuration);
 
+            app.UseEndpoints(endpoints =>
+            {
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+                endpoints.MapControllers();
+
+            });
+
+            app.Run(handler: async context => context.Response.Redirect("swagger/index.html"));
+
         }
     }
 }
