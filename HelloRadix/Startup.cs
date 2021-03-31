@@ -1,8 +1,9 @@
+using HelloRadix.Controllers;
+using HelloRadix.Converters;
 using HelloRadix.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.StaticFiles.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,10 +27,23 @@ namespace HelloRadix
                 jwtBearerScheme: JwtBearerDefaults.AuthenticationScheme,
                 subscribeToJwtBearerMiddlewareDiagnosticsEvents: true);
 
+            AddServices(services);
+
             services.AddDataProtection();
-            services.AddControllers();
+            
 
             services.ConfigureSwagger(Configuration);
+        }
+
+        private void AddServices(IServiceCollection services)
+        {
+            services.AddControllers(); 
+
+            services.AddTransient<ICollibraService, CollibraService>();
+            services.AddTransient<ICommunitiesConverter, CommunitiesConverter>();
+            services.AddSingleton<ICollibraHttpClient, CollibraHttpClient>();
+
+            services.AddHttpClient();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
