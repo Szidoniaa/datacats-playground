@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using HelloRadix.DataTransferObjects;
 using Newtonsoft.Json;
 
-namespace HelloRadix.Controllers
+namespace HelloRadix.HttpClients
 {
     public interface ICollibraHttpClient
     {

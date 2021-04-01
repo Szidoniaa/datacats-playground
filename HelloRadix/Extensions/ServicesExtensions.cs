@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using HelloRadix.Controllers;
+using HelloRadix.Converters;
+using HelloRadix.HttpClients;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
@@ -53,6 +56,17 @@ namespace HelloRadix.Extensions
                 });
 
             });
+        }
+
+        public static void RegisterLocalServices(this IServiceCollection services)
+        {
+            services.AddControllers();
+
+            services.AddTransient<ICollibraService, CollibraService>();
+            services.AddTransient<ICommunitiesConverter, CommunitiesConverter>();
+            services.AddSingleton<ICollibraHttpClient, CollibraHttpClient>();
+
+            services.AddHttpClient();
         }
     }
 }

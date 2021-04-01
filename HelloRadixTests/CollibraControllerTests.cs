@@ -45,7 +45,7 @@ namespace HelloRadixTests
             Assert.IsInstanceOf<ActionResult>(result);
         }
 
-/*        [Test]
+       /* [Test]
         public void WantThisToFail()
         {
             Assert.IsTrue(false);
