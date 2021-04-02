@@ -25,7 +25,7 @@ namespace HelloRadix
                 jwtBearerScheme: JwtBearerDefaults.AuthenticationScheme,
                 subscribeToJwtBearerMiddlewareDiagnosticsEvents: true);
 
-           services.RegisterLocalServices();
+            services.RegisterServices();
 
             services.AddDataProtection();
 
@@ -56,7 +56,7 @@ namespace HelloRadix
 
             });
 
-            app.Run(handler: async context => context.Response.Redirect("swagger/index.html"));
+            app.Run(handler: context => { context.Response.Redirect("swagger/index.html"); return System.Threading.Tasks.Task.CompletedTask; });
 
         }
     }

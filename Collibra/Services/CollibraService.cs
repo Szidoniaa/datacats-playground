@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using HelloRadix.BusinessDataTypes;
-using HelloRadix.Converters;
-using HelloRadix.HttpClients;
+using Collibra.BusinessDataTypes;
+using Collibra.Converters;
+using Collibra.HttpClients;
 
-
-namespace HelloRadix.Controllers
+namespace Collibra.Services
 {
     public interface ICollibraService
     {

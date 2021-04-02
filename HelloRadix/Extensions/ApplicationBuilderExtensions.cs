@@ -15,6 +15,7 @@ namespace HelloRadix.Extensions
                 c.OAuthRealm(configuration["AzureAD:ClientId"]);
                 c.OAuthScopeSeparator(" ");
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "HelloRadix");
+                c.OAuthScopes($"api://{configuration["AzureAd:ClientId"]}/{configuration["Swagger:Scope"]}");
             });
         }
     }

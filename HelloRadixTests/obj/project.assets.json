@@ -1673,10 +1673,36 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "Collibra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.Identity.Web": "1.8.2",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Collibra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Collibra.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
       "HelloRadix/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Collibra": "1.0.0",
+          "Common": "1.0.0",
           "Microsoft.Identity.Web": "1.8.2",
           "Swashbuckle.AspNetCore.Swagger": "6.1.1",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.1.1",
@@ -6042,6 +6068,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Collibra/1.0.0": {
+      "type": "project",
+      "path": "../Collibra/Collibra.csproj",
+      "msbuildProject": "../Collibra/Collibra.csproj"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
     },
     "HelloRadix/1.0.0": {
       "type": "project",

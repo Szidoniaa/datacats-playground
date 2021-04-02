@@ -1043,6 +1043,30 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Collibra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.Identity.Web": "1.8.2",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Collibra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Collibra.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
       }
     }
   },
@@ -4253,10 +4277,22 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Collibra/1.0.0": {
+      "type": "project",
+      "path": "../Collibra/Collibra.csproj",
+      "msbuildProject": "../Collibra/Collibra.csproj"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Collibra >= 1.0.0",
+      "Common >= 1.0.0",
       "Microsoft.Identity.Web >= 1.8.2",
       "Swashbuckle.AspNetCore.Swagger >= 6.1.1",
       "Swashbuckle.AspNetCore.SwaggerGen >= 6.1.1",
@@ -4289,7 +4325,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\projects\\datacats-playground\\Collibra\\Collibra.csproj": {
+              "projectPath": "C:\\projects\\datacats-playground\\Collibra\\Collibra.csproj"
+            },
+            "C:\\projects\\datacats-playground\\Common\\Common.csproj": {
+              "projectPath": "C:\\projects\\datacats-playground\\Common\\Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

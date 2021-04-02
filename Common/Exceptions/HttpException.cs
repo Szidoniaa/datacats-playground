@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace HelloRadix.Exceptions
+namespace Common.Exceptions
 {
     public class HttpException : Exception
     {

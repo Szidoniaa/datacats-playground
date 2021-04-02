@@ -1,4 +1,4 @@
-﻿namespace HelloRadix.BusinessDataTypes
+﻿namespace Collibra.BusinessDataTypes
 {
     public class Community
     {

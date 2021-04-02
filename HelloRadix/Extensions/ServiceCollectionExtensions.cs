@@ -1,16 +1,27 @@
 using System;
 using System.Collections.Generic;
-using HelloRadix.Controllers;
-using HelloRadix.Converters;
-using HelloRadix.HttpClients;
+using Collibra.Converters;
+using Collibra.HttpClients;
+using Collibra.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
 namespace HelloRadix.Extensions
 {
-    internal static class ServicesExtensions
+    internal static class ServiceCollectionExtensions
     {
+        public static void RegisterServices(this IServiceCollection services)
+        {
+            services.AddControllers();
+
+            services.AddTransient<ICollibraService, CollibraService>();
+            services.AddTransient<ICommunitiesConverter, CommunitiesConverter>();
+            services.AddSingleton<ICollibraHttpClient, CollibraHttpClient>();
+
+            services.AddHttpClient();
+        }
+
         public static void ConfigureSwagger(this IServiceCollection services, IConfiguration Configuration)
         {
             services.AddSwaggerGen(c =>
@@ -56,17 +67,6 @@ namespace HelloRadix.Extensions
                 });
 
             });
-        }
-
-        public static void RegisterLocalServices(this IServiceCollection services)
-        {
-            services.AddControllers();
-
-            services.AddTransient<ICollibraService, CollibraService>();
-            services.AddTransient<ICommunitiesConverter, CommunitiesConverter>();
-            services.AddSingleton<ICollibraHttpClient, CollibraHttpClient>();
-
-            services.AddHttpClient();
         }
     }
 }

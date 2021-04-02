@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace HelloRadix.DataTransferObjects
+namespace Collibra.Dtos
 {
     public class CommunitiesResultDto
     {

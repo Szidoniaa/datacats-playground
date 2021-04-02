@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace HelloRadix.DataTransferObjects
+namespace Collibra.Dtos
 {
     public class CommunityDto
     {

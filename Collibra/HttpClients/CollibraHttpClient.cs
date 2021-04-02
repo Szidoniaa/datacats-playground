@@ -2,10 +2,10 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using HelloRadix.DataTransferObjects;
+using Collibra.Dtos;
 using Newtonsoft.Json;
 
-namespace HelloRadix.HttpClients
+namespace Collibra.HttpClients
 {
     public interface ICollibraHttpClient
     {

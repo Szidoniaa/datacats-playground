@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using HelloRadix.BusinessDataTypes;
-using HelloRadix.DataTransferObjects;
+using Collibra.BusinessDataTypes;
+using Collibra.Dtos;
 
-namespace HelloRadix.Converters
+namespace Collibra.Converters
 {
     public interface ICommunitiesConverter
     {
