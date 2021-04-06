@@ -10,10 +10,7 @@ spec:
         from: feature/*
     - name: development
       build:
-        from: master
-    - name: production
-      build:
-        from: release
+        from: master 
   components:
     - name: OmniaDataCatalogApi      
       dockerfileName: Dockerfile      
