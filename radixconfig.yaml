@@ -19,5 +19,5 @@ spec:
       ports:
         - name: http
           port: 3000
-      publicPort: true
+      public: true
       replicas: 1
