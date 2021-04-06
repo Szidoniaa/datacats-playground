@@ -26,8 +26,8 @@ RUN dotnet build "Common/Common.csproj" -c Release -o /app/build
 RUN dotnet build "HelloRadixTests/HelloRadixTests.csproj" -c Release -o /app/build
 RUN dotnet build "CollibraTests/CollibraTests.csproj" -c Release -o /app/build
 
-RUN dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Threshold=5 /p:ThresholdType=line --logger "trx;LogFileName=webapplication1.trx" 
-# RUN dotnet test "CollibraTests/CollibraTests.csproj" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Threshold=5 /p:ThresholdType=line --logger "trx;LogFileName=webapplication1.trx" 
+RUN dotnet test "HelloRadixTests/HelloRadixTests.csproj" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura --logger "trx;LogFileName=webapplication1.trx" 
+RUN dotnet test "CollibraTests/CollibraTests.csproj" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura --logger "trx;LogFileName=webapplication2.trx" 
 
 FROM build AS publish
 RUN dotnet publish "HelloRadix/HelloRadix.csproj" -c Release -o /app/publish
