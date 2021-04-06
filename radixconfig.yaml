@@ -12,7 +12,7 @@ spec:
       build:
         from: master 
   components:
-    - name: helloradix      
+    - name: equinor.omniadatacatalogapi.api      
       dockerfileName: Dockerfile      
       ports:
         - name: http
