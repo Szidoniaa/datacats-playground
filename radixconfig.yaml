@@ -1,7 +1,7 @@
 apiVersion: radix.equinor.com/v1
 kind: RadixApplication
 metadata:
-  name: OmniaDataCatalogApi
+  name: helloradix
 spec:
   build:
   environments:
@@ -12,7 +12,7 @@ spec:
       build:
         from: master 
   components:
-    - name: OmniaDataCatalogApi      
+    - name: helloradix      
       dockerfileName: Dockerfile      
       ports:
         - name: http
