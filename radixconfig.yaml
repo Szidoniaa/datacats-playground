@@ -12,7 +12,7 @@ spec:
       build:
         from: master 
   components:
-    - name: equinor.omniadatacatalogapi.api      
+    - name: omniadatacatalogapi     
       dockerfileName: Dockerfile      
       ports:
         - name: http
