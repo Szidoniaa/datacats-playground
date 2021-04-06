@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Collibra.BusinessDataTypes;
 using Collibra.Services;
 using Common.Exceptions;
 using Microsoft.AspNetCore.Authorization;
@@ -29,6 +31,7 @@ namespace HelloRadix.Controllers
 
         [HttpGet]
         [Route("communities")]
+        [Produces(typeof(IEnumerable<Community>))]
         public async Task<ActionResult> Communities(CancellationToken cancellationToken=default)
         {
             try
