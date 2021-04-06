@@ -15,8 +15,8 @@ spec:
       build:
         from: release
   components:
-    - name: helloradix
-      dockerfileName: Dockerfile
+    - name: helloradix      
+      dockerfileName: Dockerfile      
       ports:
         - name: http
           port: 3000

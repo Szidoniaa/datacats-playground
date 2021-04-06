@@ -11,7 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		radixconfig.yaml = radixconfig.yaml
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloRadixTests", "HelloRadixTests\HelloRadixTests.csproj", "{4DF40E64-51D7-45FC-A99D-B6DC79478CC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{4DF40E64-51D7-45FC-A99D-B6DC79478CC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{950C8670-04B9-422D-8ADC-B877A2389978}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collibra", "Collibra\Collibra.csproj", "{B4999FD9-089D-498B-8170-1AE4CA3AAFFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{4DF40E64-51D7-45FC-A99D-B6DC79478CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DF40E64-51D7-45FC-A99D-B6DC79478CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DF40E64-51D7-45FC-A99D-B6DC79478CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950C8670-04B9-422D-8ADC-B877A2389978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950C8670-04B9-422D-8ADC-B877A2389978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950C8670-04B9-422D-8ADC-B877A2389978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950C8670-04B9-422D-8ADC-B877A2389978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4999FD9-089D-498B-8170-1AE4CA3AAFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4999FD9-089D-498B-8170-1AE4CA3AAFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4999FD9-089D-498B-8170-1AE4CA3AAFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4999FD9-089D-498B-8170-1AE4CA3AAFFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
