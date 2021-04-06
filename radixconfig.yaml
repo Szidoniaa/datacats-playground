@@ -14,8 +14,10 @@ spec:
   components:
     - name: omniadatacatalogapi     
       dockerfileName: Dockerfile      
+      variables:
+        ASPNETCORE_URLS: "http://*:3000"
       ports:
         - name: http
           port: 3000
-      public: true
+      publicPort: true
       replicas: 1
