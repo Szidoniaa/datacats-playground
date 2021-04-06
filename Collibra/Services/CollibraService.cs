@@ -16,7 +16,7 @@ namespace Collibra.Services
     {
         private readonly ICollibraHttpClient _collibraHttpClient;
         private readonly ICommunitiesConverter _communitiesConverter;
-        private readonly string _communitiesPath = "rest/2.0/communities";
+        private readonly string _communitiesPath = "rest/2.0/communities";//move this to configuration?
 
         public CollibraService(ICollibraHttpClient collibraHttpClient, ICommunitiesConverter communitiesConverter)
         {
