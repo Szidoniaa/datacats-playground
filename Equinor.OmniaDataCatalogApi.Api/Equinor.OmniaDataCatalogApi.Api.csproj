@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>0b482756-113e-458a-b035-71a574c9f8ae</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.8.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Equinor.OmniaDataCatalogApi.Collibra\Equinor.OmniaDataCatalogApi.Collibra.csproj" />
+    <ProjectReference Include="..\Equinor.OmniaDataCatalogApi.Common\Equinor.OmniaDataCatalogApi.Common.csproj" />
+  </ItemGroup>
+
+
+</Project>
